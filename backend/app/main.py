@@ -8,6 +8,7 @@ Run locally:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api import auth as auth_router
 from app.api import health as health_router
 from app.core.config import settings
 
@@ -24,3 +25,4 @@ app.add_middleware(
 )
 
 app.include_router(health_router.router)
+app.include_router(auth_router.router)

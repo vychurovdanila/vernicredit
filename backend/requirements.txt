@@ -8,3 +8,14 @@ email-validator==2.4.0
 # Database / migrations (T-001)
 SQLAlchemy==2.1.9
 alembic==1.20.1
+
+# Authentication / JWT (T-004)
+# bcrypt is pinned to a 4.0.x release: passlib 1.7.4 reads
+# `bcrypt.__about__.__version__`, which was removed in bcrypt>=4.1, and
+# bcrypt 5.x additionally rejects passlib's internal >72-byte probe.
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.5.0
+
+# Test client dependency (T-004 endpoint smoke tests)
+httpx==0.28.1

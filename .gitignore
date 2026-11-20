@@ -15,4 +15,4 @@ desktop.ini
 .env.*.local
 
 # Cline/AI
-.clineignore
+# .clineignore версионируется — правила игнорирования общие для команды

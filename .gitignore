@@ -16,3 +16,6 @@ desktop.ini
 
 # Cline/AI
 # .clineignore версионируется — правила игнорирования общие для команды
+
+# Temporary helper scripts (AI-generated)
+_gen*.py
